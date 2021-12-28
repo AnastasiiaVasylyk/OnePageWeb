@@ -30,4 +30,247 @@
   font-weight: 300;
   font-style: normal;
 }
+
+.home-section {
+  position: relative;
+}
+
+.home-section__container {
+  position: relative;
+}
+
+.home-section__header {
+  margin: 15px;
+  position: absolute;
+}
+
+.home-section__background {
+  overflow: hidden;
+  height: 480px;
+}
+
+.home-section__background-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.home-section__banner {
+  margin: 0 15px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.home-section__title {
+  margin-top: 38px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  color: #fefeff;
+  position: relative;
+}
+
+.home-section__title::before {
+  content: '';
+  height: 2px;
+  width: 45px;
+  background-color: #e3a93b;
+  position: absolute;
+  top: -15px;
+}
+
+.home-section__subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #a6adcb;
+}
+
+.home-section__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fefeff;
+  margin-top: 30px;
+}
+
+.home-section__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.nav {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav__item {
+  display: block;
+  color: #a6adcb;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color 0.5s ease 0s;
+  transition: color 0.5s ease 0s;
+}
+
+.nav__item:active {
+  color: #fefeff;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item {
+  display: block;
+  height: 35px;
+  width: 35px;
+  margin-right: 25px;
+  position: relative;
+}
+
+@media (min-width: 360px) {
+  .home-section__background {
+    height: 640px;
+  }
+  .home-section__title {
+    font-size: 54px;
+    margin-bottom: 20px;
+    max-width: 500px;
+  }
+  .home-section__subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .home-section__text {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 420px;
+    margin-bottom: 20px;
+  }
+  .nav {
+    font-size: 16px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-section {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 768px;
+    background-color: #181c28;
+  }
+  .home-section__container {
+    position: static;
+    width: 738px;
+    z-index: 1;
+  }
+  .home-section__header {
+    margin: 15px 0;
+    position: static;
+  }
+  .home-section__background {
+    height: 768px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .home-section__banner {
+    margin: 0;
+    bottom: 60px;
+    max-width: 500px;
+  }
+  .home-section__title {
+    margin-bottom: 30px;
+    font-size: 58px;
+  }
+  .home-section__title::before {
+    width: 70px;
+    top: -30px;
+  }
+  .home-section__subtitle {
+    font-size: 20px;
+  }
+  .home-section__text {
+    font-size: 18px;
+    line-height: auto;
+    margin-top: 60px;
+  }
+  .home-section__social {
+    margin-top: 40px;
+  }
+  .nav {
+    line-height: auto;
+  }
+  .nav__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .social__item {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-section__container {
+    width: 993px;
+  }
+  .home-section__banner {
+    max-width: 600px;
+  }
+  .home-section__title {
+    font-size: 86px;
+  }
+  .home-section__title::before {
+    width: 95px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

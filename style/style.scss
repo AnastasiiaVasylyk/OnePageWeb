@@ -26,3 +26,223 @@
 	font-weight: 300;
 	font-style: normal;
 }
+
+// first section --------------------
+.home-section {
+    position: relative;
+    &__container {
+        position: relative;
+    }
+    &__header {
+        margin: 15px;
+        position: absolute;
+    }
+    &__background {
+        overflow: hidden;
+        height: 480px;
+    }
+    &__background-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__banner {
+        margin: 0 15px;
+        position: absolute;
+        bottom: 20px;
+    }
+    &__title {
+        margin-top: 38px;
+        margin-bottom: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        color: #fefeff;
+        position: relative;
+        &::before {
+            content: '';
+            height: 2px;
+            width: 45px;
+            background-color: #e3a93b;
+            position: absolute;
+            top: -15px;
+        }
+    }
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #a6adcb;
+    }
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fefeff;
+        margin-top: 30px;
+    }
+    &__social {
+        display: flex;
+        margin-top: 10px;
+    }
+}
+
+.nav {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        display: block;
+        color: #a6adcb;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.5s ease 0s;
+        &:active {
+            color: #fefeff;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    &__item {
+        display: block;
+        height: 35px;
+        width: 35px;
+        margin-right: 25px;
+        position: relative;
+    }        
+}
+
+//-------------------------------------------mobile
+@media (min-width: 360px) {
+    .home-section {
+        &__background {
+            height: 640px;
+        }
+        &__title {
+            font-size: 54px;  
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            margin-bottom: 20px; 
+        }
+        &__text {
+            font-size: 18px; 
+            line-height: 26px; 
+            max-width: 420px;
+            margin-bottom: 20px;
+        }
+    }
+    .nav {
+        font-size: 16px;
+        line-height: 45px; 
+    }
+}
+
+//-----------------------------------tablet
+@media (min-width: 768px) {
+
+    .home-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 768px;
+        background-color: #181c28;
+
+        &__container {
+            position: static;
+            width: 738px; 
+            z-index: 1; 
+        }
+        &__header { 
+            margin: 15px 0;
+            position: static;
+        }        
+        &__background {
+            height: 768px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1; 
+        }
+        &__banner {
+            margin: 0; 
+            bottom: 60px; 
+            max-width: 500px; 
+        }
+        &__title {
+            margin-bottom: 30px; 
+            font-size: 58px; 
+            &::before {
+                width: 70px; 
+                top: -30px; 
+            }
+        }
+        &__subtitle {
+            font-size: 20px; 
+        }
+        &__text {
+            font-size: 18px; 
+            line-height: auto;
+            margin-top: 60px; 
+        }
+        &__social {
+            margin-top: 40px; 
+        }
+    }
+    .nav {
+        line-height: auto;
+    
+        &__list {
+            justify-content: space-between;
+            flex-direction: row; 
+            width: 100%; 
+        }
+    }
+    .social {
+        &__item {
+            height: 25px; 
+            width: 25px; 
+        }        
+    }
+}
+
+//-----------------------------------desktop
+@media (min-width: 1024px) {
+
+    .home-section {
+        &__container {
+            width: 993px;  
+        }
+        &__banner {
+            max-width: 600px; 
+        }
+        &__title {
+            font-size: 86px; 
+            &::before {
+                width: 95px; 
+            }
+        }
+    }
+}
