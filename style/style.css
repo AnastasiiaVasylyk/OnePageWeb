@@ -579,4 +579,262 @@
     left: 0;
   }
 }
+
+.gallery {
+  padding-bottom: 50px;
+  background-color: #ced3e6;
+}
+
+.gallery__title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 30px;
+  color: #1f222c;
+  margin: 0;
+  padding: 50px 0 20px 0;
+}
+
+.gallery__subtitle {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 18px;
+  color: #fefeff;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.gallery__img-container {
+  margin: 10px 10px 0 10px;
+  overflow: hidden;
+  height: 320px;
+}
+
+.gallery__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 360px) {
+  .gallery__img-container {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery__fotos-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 10px;
+  }
+  .gallery__img-container {
+    margin: 10px 10px 0 10px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery__container {
+    max-width: 993px;
+  }
+  .gallery__fotos-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .gallery__img-container {
+    margin: 0;
+  }
+  .gallery__img-container:nth-child(2) {
+    margin: 0 20px;
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  background: #1a1b20;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__list-item {
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  color: #4b4d68;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 37px;
+}
+
+.footer__contact-block {
+  padding: 0 20px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 170px;
+}
+
+.footer__socials-item {
+  height: 30px;
+  width: 30px;
+}
+
+.footer__email-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.footer__icon-envelope {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.footer__email {
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  color: #ced3e6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__author {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer__author-description {
+  font-family: 'Ubuntu';
+  color: #4b4d68;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__author-link {
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  color: #4b4d68;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 200px;
+    position: relative;
+  }
+  .footer__navigation {
+    position: absolute;
+    left: 20px;
+  }
+  .footer__list {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 200px;
+  }
+  .footer__list-item {
+    display: block;
+  }
+  .footer__contact-block {
+    padding: 0;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: absolute;
+    right: 20px;
+  }
+  .footer__author {
+    text-align: end;
+  }
+}
+
+@media (min-width: 1023px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__container {
+    width: 993px;
+    position: relative;
+  }
+  .footer__navigation {
+    left: 0;
+  }
+  .footer__contact-block {
+    right: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

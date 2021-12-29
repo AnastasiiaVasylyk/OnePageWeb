@@ -509,3 +509,199 @@
         }
     }
 }
+// gallery ----------------------------------------------------------------
+.gallery {
+    padding-bottom: 50px;
+    background-color: #ced3e6;
+    &__title {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 30px;
+        color: #1f222c;
+        margin: 0;
+        padding: 50px 0 20px 0;
+    }
+    &__subtitle {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 18px;
+        color: #fefeff;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+    }
+    &__img-container {
+        margin: 10px 10px 0 10px;
+        overflow: hidden;
+        height: 320px;
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+//-------------------------------------------mobile
+@media (min-width: 360px) {
+    .gallery {
+        &__img-container {
+            height: 100%;
+        }
+    }
+}
+//-----------------------------------tablet
+@media (min-width: 768px) {
+    .gallery {
+        &__fotos-block {
+            display: flex;
+            margin: 0 10px;
+        }
+        &__img-container {
+            margin: 10px 10px 0 10px;
+        }
+    }
+}
+//-----------------------------------desktop
+@media (min-width: 1023px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        &__container {
+            max-width: 993px
+        }
+        &__fotos-block {
+            display: flex;
+            margin: 0;
+        }
+        &__img-container {
+            margin: 0;
+            &:nth-child(2) {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+// footer ---------------------------------------------------------------
+.footer {
+    padding: 60px 0;
+    background: #1a1b20;
+    &__list {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+    }
+    &__list-item {
+        text-decoration: none;
+        font-family: 'Ubuntu';
+        color: #4b4d68;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 37px;
+    }
+    &__contact-block {
+        padding: 0 20px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 170px;
+    }
+    &__socials-item {
+        height: 30px;
+        width: 30px;
+    }
+    &__email-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+        margin: 20px 0;
+    }
+    &__icon-envelope {
+        width: 30px;
+        margin-right: 20px;
+    }
+    &__email {
+        text-decoration: none;
+        font-family: 'Ubuntu';
+        color: #ced3e6;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__author {
+        text-align: center;
+        margin-top: 50px;
+    }
+    &__author-description {
+        font-family: 'Ubuntu';
+        color: #4b4d68;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__author-link {
+        text-decoration: none;
+        font-family: 'Ubuntu';
+        color: #4b4d68;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+//-----------------------------------tablet
+@media (min-width: 768px){
+    .footer {
+        height: 200px;
+        position: relative;
+        &__navigation {
+            position: absolute;
+            left: 20px;
+        }
+        &__list {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 200px; 
+        }
+        &__list-item {
+            display: block;
+        }
+        &__contact-block {
+            padding: 0;
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            right: 20px;
+        }
+        &__author {
+            text-align: end;
+        }
+    }
+}
+//-----------------------------------desktop
+@media (min-width: 1023px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__container {
+            width: 993px;
+            position: relative;
+        }
+        &__navigation {
+            left: 0;
+        }
+        &__contact-block {
+            right: 0;
+        }
+    }
+}
